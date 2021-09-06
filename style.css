@@ -44,9 +44,17 @@ header img {
 
 #navBar a {
     margin-left: 3vw;
+}
+
+a {
     text-decoration: none;
     font-size: 110%;
     color: white;
+}
+
+.conteudo a {
+    color: black;
+    font-size: 1.025rem;
 }
 
 main {
@@ -57,6 +65,20 @@ main img {
     width: 100%;
     height: 100%;
     max-width: 100%;
+}
+
+.mcontainer {
+    position: relative;
+    text-align: center;
+}
+
+
+
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 aside{
@@ -75,12 +97,12 @@ aside > article{
 
 footer {
     background-color: var(--corPrimaria);
-    padding: 16px;
+    padding: 20px 5px;
     height: 10vh;
 }
 footer img {
-    width: 7vw;
-    justify-content: left;
+    width: 8vw;
+    justify-content: right;
 }
 
 h1 {
@@ -148,3 +170,25 @@ input:focus {
 #cidade {
     width: 24.5vw;
 }
+
+.imidia, .vmidia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.imidia img{
+    width: 25vw;
+    margin: 75px 0;
+    box-shadow: -1px 2px 1px 1px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.vmidia iframe{
+    box-shadow: -3px 3px 1px 1px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+
