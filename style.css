@@ -9,6 +9,7 @@
 
 :root {
     --corPrimaria: #335492;
+    --CorPrimariaOpaca: #335492bd;
     --corSecundaria: #222
 
 }
@@ -27,7 +28,7 @@ header a {
 }
 
 header img {
-    width: 10%;
+    width: 5%;
     max-width: 100%;
 }
 
@@ -52,7 +53,7 @@ a {
     color: white;
 }
 
-.conteudo a {
+.rel a {
     color: black;
     font-size: 1.025rem;
 }
@@ -65,6 +66,7 @@ main img {
     width: 100%;
     height: 100%;
     max-width: 100%;
+    opacity: 95%
 }
 
 .mcontainer {
@@ -79,6 +81,9 @@ main img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 24px;
+    text-shadow: -3px 2px rgb(0, 0, 0, 0.8)
 }
 
 aside{
@@ -97,12 +102,23 @@ aside > article{
 
 footer {
     background-color: var(--corPrimaria);
-    padding: 20px 5px;
-    height: 10vh;
+    height: 9.9vh;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 footer img {
-    width: 8vw;
-    justify-content: right;
+    width: 5%;
+}
+
+footer ul li {
+    flex-direction: row; 
+    padding: 2px 12px;
+}
+
+ul li::marker {
+    color: rgb(0, 0, 0, 0)
 }
 
 h1 {
@@ -189,6 +205,48 @@ input:focus {
     box-shadow: -3px 3px 1px 1px rgb(0, 0, 0, 0.5);
     border-radius: 15px;
     margin: 30px;
+}
+
+div.quemsomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 80px 5px;
+}
+
+div.quemsomos > div {
+    margin: 30px;
+    padding: 15px;
+    border: 2px solid var(--corPrimaria);
+    border-radius: 5px;
+    box-shadow: -3px 2px rgb(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+div.quemsomos div p {
+    text-align: justify;
+}
+
+.conteudo{
+    text-align: center;
+    margin: 20px 10%;
+    padding: 10px;
+    background-color: var(--CorPrimariaOpaca);
+    border-radius: 10px;      
+    box-shadow: -2px 2px rgb(0, 0, 0, 0.5);  
+}
+.conteudo img {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.conteudo p {
+    margin: 10px;
+    text-align: justify;
+}
+
+.conteudo br {
+    margin: 10px;
 }
 
 
