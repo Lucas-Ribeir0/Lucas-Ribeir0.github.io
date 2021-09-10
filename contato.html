@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale="1.0">
     <link rel="stylesheet" href="style.css">
     <title>Automobilistas - Fale Conosco</title>
 </head>
 <body>
+    <div id="box">
     <div>
         <header id="logoBar">
             <a href="./index.html"><img src="./files/img-placeholder.png" alt=""></a>
@@ -16,22 +17,32 @@
     <div class="form">
             <h1>Fale Conosco</h1>
             <form>
-                <input type="text" id="nome" name="primNome" placeholder="Nome*" required/>
-                <input type="text" id="nome" name="seguNome" placeholder="Sobrenome*" required/>
-                <input type="email" name="email" id="email" placeholder="E-mail*" required/>
-                <input type="tel" name="telefone" id="telefone" required placeholder="Telefone Celular*" maxlength="11"/>
-                <input type="tel" name="telefone" id="telefone" placeholder="Telefone Residencial" maxlength="11"/>
-                <div id="cod"></div>
-                <select name="UF" id="UF">
-                    <option value="Estado" selected>UF</option>
-                    <option value="SP">SP</option>
-                    <option value="MG">MG</option>
-                    <option value="MS">MS</option>
-                    <option value="RJ">RJ</option>
-                </select>
-                <input type="text" id="cidade" name="cidade" placeholder="Cidade">
-                <textarea name="msgper" id="msgper" cols="44" rows="5" placeholder="Digite sua mensagem"></textarea>
-                <input type="submit" value="Enviar Mensagem">
+                <div>
+                    <input type="text" id="nome" name="primNome" placeholder="Nome*" required/> 
+                    <input type="text" id="nome" name="seguNome" placeholder="Sobrenome*" required/>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="E-mail*" required/>
+                </div>
+                <div>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="Telefone Celular*" maxlength="11"/>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone Residencial" maxlength="11"/>
+                </div>
+                <div id="cod">
+                    <select name="UF" id="UF">
+                        <option value="Estado" selected>UF</option>
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                        <option value="MS">MS</option>
+                        <option value="RJ">RJ</option>
+                    </select>
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                </div>
+                <div>
+                    <textarea name="msgper" id="msgper" cols="44" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Mensagem">
                 </div>
             </form>
     </div>
@@ -42,6 +53,6 @@
             <li>(16)998877-1122</li>
         </ul>
     </footer>
-
+    </div>
 </body>
 </html> 
