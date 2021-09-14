@@ -22,7 +22,7 @@ header a {
 }
 
 header img {
-    width: 5%;
+    width: 4%;
     max-width: 100%;
 }
 
@@ -65,7 +65,7 @@ main img {
 
 .mcontainer {
     position: relative;
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -103,7 +103,7 @@ footer {
     justify-content: space-between;
 }
 footer img {
-    width: 5%;
+    width: 3%;
 }
 
 footer ul li {
